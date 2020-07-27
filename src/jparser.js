@@ -1,7 +1,7 @@
 (function () {
 
 if (typeof jDataView === 'undefined' && typeof require !== 'undefined') {
-	jDataView = require('jDataView');
+	jDataView = require('jdataview'); //'jDataView' is the old name. The new name is `jdataview`.
 }
 
 // Extend code from underscorejs (modified for fast inheritance using prototypes)

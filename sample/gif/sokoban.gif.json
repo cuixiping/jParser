@@ -1,0 +1,2025 @@
+{
+  "Header": {
+    "Signature": "GIF",
+    "Version": "89a"
+  },
+  "LogicalScreen": {
+    "type": "LogicalScreen",
+    "Descriptor": {
+      "width": 128,
+      "height": 128,
+      "PackedFields": {
+        "GlobalColorTableFlag": 1,
+        "ColorResolution": 7,
+        "SortFlag": 0,
+        "SizeOfGlobalColorTable": 3
+      },
+      "BackgroundColorIndex": 7,
+      "PixelAspectRatio": 0
+    },
+    "GlobalColorTable": [
+      [
+        37,
+        30,
+        37
+      ],
+      [
+        204,
+        102,
+        1
+      ],
+      [
+        0,
+        131,
+        197
+      ],
+      [
+        0,
+        253,
+        251
+      ],
+      [
+        39,
+        57,
+        57
+      ],
+      [
+        133,
+        131,
+        133
+      ],
+      [
+        179,
+        110,
+        42
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        220,
+        220,
+        220
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "DataBlocks": [
+    {
+      "blockType": "ApplicationExtension",
+      "ExtensionBlock": {
+        "Extension Introducer": "0x21",
+        "Extension Label": "0xFF",
+        "Block Size": 11,
+        "Application Identifier": "NETSCAPE",
+        "Authentication Code": [
+          50,
+          46,
+          48
+        ],
+        "Application Data": [
+          {
+            "type": "Data Sub-block",
+            "size": 3,
+            "start": 76
+          }
+        ],
+        "Block Terminator": "0x00"
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 1,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 0
+        },
+        "Delay Time": 100,
+        "Transparent Color Index": 255,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 0,
+          "TopPosition": 0,
+          "Width": 128,
+          "Height": 128,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 4,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 255,
+              "start": 100
+            },
+            {
+              "type": "Data Sub-block",
+              "size": 255,
+              "start": 356
+            },
+            {
+              "type": "Data Sub-block",
+              "size": 255,
+              "start": 612
+            },
+            {
+              "type": "Data Sub-block",
+              "size": 255,
+              "start": 868
+            },
+            {
+              "type": "Data Sub-block",
+              "size": 255,
+              "start": 1124
+            },
+            {
+              "type": "Data Sub-block",
+              "size": 197,
+              "start": 1380
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 2,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 49,
+          "TopPosition": 97,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 1598
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 3,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 33,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 1631
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 4,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 33,
+          "TopPosition": 64,
+          "Width": 31,
+          "Height": 16,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 41,
+              "start": 1681
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 5,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 64,
+          "Width": 31,
+          "Height": 16,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 89,
+              "start": 1743
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 6,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 48,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 49,
+              "start": 1853
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 7,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 4,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 16,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 112,
+              "start": 1923
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 8,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 33,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 26,
+              "start": 2056
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 9,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 97,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 2103
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 10,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 80,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 49,
+              "start": 2153
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 11,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 48,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 80,
+              "start": 2223
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 12,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 2324
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 13,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 97,
+          "TopPosition": 81,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 2357
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 14,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 80,
+          "TopPosition": 80,
+          "Width": 31,
+          "Height": 16,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 47,
+              "start": 2407
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 15,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 80,
+          "Width": 31,
+          "Height": 16,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 88,
+              "start": 2475
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 16,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 81,
+          "TopPosition": 81,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 2584
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 17,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 2617
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 18,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 48,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 49,
+              "start": 2667
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 19,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 4,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 32,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 95,
+              "start": 2737
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 20,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 49,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 2853
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 21,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 81,
+          "TopPosition": 49,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 44,
+              "start": 2886
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 22,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 80,
+          "TopPosition": 49,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 66,
+              "start": 2951
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 23,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 80,
+          "TopPosition": 65,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 80,
+              "start": 3038
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 24,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 81,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 3139
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 25,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 97,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 3172
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 26,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 80,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 49,
+              "start": 3222
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 27,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 48,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 80,
+              "start": 3292
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 28,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 3393
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 29,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 81,
+          "TopPosition": 49,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 44,
+              "start": 3426
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 30,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 64,
+          "TopPosition": 48,
+          "Width": 31,
+          "Height": 16,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 64,
+              "start": 3491
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 31,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 48,
+          "TopPosition": 48,
+          "Width": 31,
+          "Height": 16,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 88,
+              "start": 3576
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 32,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 65,
+          "TopPosition": 49,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 3685
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 33,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 81,
+          "TopPosition": 97,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 3718
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 34,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 80,
+          "TopPosition": 80,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 49,
+              "start": 3768
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 35,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 4,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 80,
+          "TopPosition": 48,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 95,
+              "start": 3838
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 36,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 81,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 12,
+              "start": 3954
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 37,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 30,
+        "Transparent Color Index": 0,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 49,
+          "TopPosition": 65,
+          "Width": 14,
+          "Height": 14,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 2,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 29,
+              "start": 3987
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 38,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 0,
+        "Transparent Color Index": 1,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 48,
+          "TopPosition": 48,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 49,
+              "start": 4037
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    },
+    {
+      "blockType": "Graphic Block",
+      "blockSubType": "TableBasedImage",
+      "GraphicBlockIndex": 39,
+      "Graphic Control Extension": {
+        "Extension Introducer": "0x21",
+        "Graphic Control Label": "0xF9",
+        "Block Size": 4,
+        "Packed Fields": {
+          "Reserved": 0,
+          "DisposalMethod": 1,
+          "UserInputFlag": 0,
+          "TransparentColorFlag": 1
+        },
+        "Delay Time": 230,
+        "Transparent Color Index": 4,
+        "Block Terminator": "0x00"
+      },
+      "Graphic-Rendering Block": {
+        "type": "TableBasedImage",
+        "ImageDescriptor": {
+          "Separator": 44,
+          "LeftPosition": 48,
+          "TopPosition": 16,
+          "Width": 16,
+          "Height": 31,
+          "PackedFields": {
+            "LocalColorTableFlag": 0,
+            "InterlaceFlag": 0,
+            "SortFlag": 0,
+            "Reserved": 0,
+            "SizeOfLocalColorTable": 0
+          }
+        },
+        "LocalColorTable": null,
+        "ImageData": {
+          "LZWMinimumCodeSize": 3,
+          "DataSubBlocks": [
+            {
+              "type": "Data Sub-block",
+              "size": 95,
+              "start": 4107
+            }
+          ],
+          "Block Terminator": "0x00"
+        }
+      }
+    }
+  ],
+  "Trailer": "0x3B"
+}

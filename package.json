@@ -1,0 +1,25 @@
+{
+  "name": "jparser",
+  "version": "1.0.0",
+  "description": "jParser",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjeux/jParser.git"
+  },
+  "author": "vjeux <vjeuxx@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vjeux/jParser/issues"
+  },
+  "homepage": "https://github.com/vjeux/jParser#readme",
+  "dependencies": {
+    "jdataview": "^2.5.0"
+  }
+}
