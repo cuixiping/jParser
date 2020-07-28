@@ -104,20 +104,20 @@
     {
       "blockType": "ApplicationExtension",
       "ExtensionBlock": {
+        "Netscape": "Looping",
+        "Name": "Netscape Looping Application Extension",
         "Extension Introducer": "0x21",
         "Extension Label": "0xFF",
         "Block Size": 11,
         "Application Identifier": "NETSCAPE",
-        "Authentication Code": [
-          50,
-          46,
-          48
-        ],
+        "Authentication Code": "2.0",
         "Application Data": [
           {
             "type": "Data Sub-block",
             "size": 3,
-            "start": 76
+            "start": 76,
+            "ID": "0x01",
+            "Loop Count": 0
           }
         ],
         "Block Terminator": "0x00"

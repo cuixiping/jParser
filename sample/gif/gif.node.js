@@ -19,8 +19,13 @@ var jParser = require('../../src/jparser.js');
  * <Table-Based Image> ::=   Image Descriptor [Local Color Table] Image Data
  * <Special-Purpose Block> ::=    Application Extension  | Comment Extension
 **/
+
 function byteToHex(byte) {
 	return '0x' + byte.toString(16).toUpperCase().padStart(2, '0');
+}
+
+function bytesToHex(bytes) {
+	return '[' + bytes.map(byte => byte.toString(16).toUpperCase().padStart(2, '0')).join(' ') + ']';
 }
 
 const labelsDef = {
@@ -40,12 +45,50 @@ const gifParserStructure = {
 	Byte: 'uint8',
 	Unsigned: 'uint16',
 	label: 'Byte',
+	rgb: ['array', 'uint8', 3],
+
+	TRY: function (...args) {
+		let before = this.tell();
+		try {
+			return this.parse(...args);
+		} catch (error) {
+			this.seek(before);
+		}
+	},
+	HEX_BYTE: byte => byteToHex(byte),
+	HEX_BYTES: bytes => bytesToHex(bytes),
+	FixedByte: function (expectValue, name, format) {
+		let value = this.parse('Byte');
+		if (value !== expectValue) {
+			throw (name || 'Fixed Byte') + ' Exception: expect ' + byteToHex(expectValue) + ', actual ' + byteToHex(value) + ', position: ' + byteToHex(this.tell() - 1);
+		}
+		return format == 'number' ? value : byteToHex(value);
+	},
+	FixedByteArray: function (expectBytes) {
+		let bytes = this.parse(['array', 'Byte', expectBytes.length]);
+		var str = bytesToHex(expectBytes);
+		if (bytes.length !== expectBytes.length) {
+			throw 'FixedByteArray Exception: expect ' + str + ', actual ' + bytesToHex(bytes) + ', position: ' + byteToHex(this.tell() - 1);
+		}
+		for (let i = 0; i < expectBytes.length; i++) {
+			if (bytes[i] !== expectBytes[i]) {
+				throw 'FixedByteArray Exception: expect ' + str + ', actual ' + bytesToHex(bytes) + ', position: ' + byteToHex(this.tell() - 1);
+			}
+		}
+		return str;
+	},
+	FixedString: function (expectValue, name) {
+		let value = this.parse('string', expectValue.length);
+		if (value !== expectValue) {
+			throw (name || 'Fixed String') + ' Exception: expect ' + expectValue + ', actual ' + value + ', position: ' + byteToHex(this.tell() - 1);
+		}
+		return value;
+	},
+
 	Header: {
 		Signature: ['string', 3], //GIF
 		Version: ['string', 3], //89a
 	},
-
-	rgb: ['array', 'uint8', 3],
 
 	ColorTable: function (ColorTableFlag, SizeOfColorTable) {
 		// console.log('[function] ColorTable ', ColorTableFlag, SizeOfColorTable);
@@ -80,13 +123,6 @@ const gifParserStructure = {
 		SizeOfGlobalColorTable: 3,
 	},
 
-	'FixedByte': function (expectValue, name) {
-		let value = this.parse('Byte');
-		if (value !== expectValue) {
-			throw (name || 'Fixed Byte') + ' Exception: expect ' + byteToHex(expectValue) + ', actual ' + byteToHex(value) + ', position: ' + byteToHex(this.tell() - 1);
-		}
-		return byteToHex(expectValue);
-	},
 	'Block Terminator': ['FixedByte', 0x00, 'Block Terminator'],
 	'Extension Introducer': ['FixedByte', 0x21, 'Extension Introducer'],
 	'Graphic Control Label': ['FixedByte', 0xF9, 'Graphic Control Label'],
@@ -192,6 +228,60 @@ const gifParserStructure = {
 		'Application Data': 'Data Sub-block Array',
 		'Block Terminator': 'Block Terminator',
 	},
+	// Netscape Looping Application Extension (GIF Unofficial Specification)
+	// http://www.vurdalakov.net/misc/gif
+	// http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension
+	// http://www.vurdalakov.net/misc/gif/netscape-buffering-application-extension
+	'Netscape Looping Application Extension': {
+		'Netscape': () => 'Looping',
+		'Name': () => 'Netscape Looping Application Extension',
+		'Extension Introducer': 'Extension Introducer', // 0x21
+		'Extension Label': ['FixedByte', 0xFF, 'Extension Label'], // 0xFF
+		'Block Size': ['FixedByte', 0x0B, 'Extension Label', 'number'], // 0x0B
+		'Application Identifier': ['FixedString', 'NETSCAPE'],
+		'Authentication Code': ['FixedString', '2.0'],
+		// 'Application Data': 'Data Sub-block Array',
+		'Application Data': ['array', 'Netscape Looping Sub Block', 1],
+		'Block Terminator': 'Block Terminator',
+	},
+	'Netscape Buffering Application Extension': {
+		'Netscape': () => 'Buffering',
+		'Name': () => 'Netscape Buffering Application Extension',
+		'Extension Introducer': 'Extension Introducer', // 0x21
+		'Extension Label': ['FixedByte', 0xFF, 'Extension Label'], // 0xFF
+		'Block Size': ['FixedByte', 0x0B, 'Extension Label', 'number'], // 0x0B
+		'Application Identifier': ['FixedString', 'NETSCAPE'],
+		'Authentication Code': ['FixedString', '2.0'],
+		// 'Application Data': 'Data Sub-block Array',
+		'Application Data': ['array', 'Netscape Buffering Sub Block', 1],
+		'Block Terminator': 'Block Terminator',
+	},
+	'AnimExts Looping Application Extension': {
+		'Netscape': () => 'Looping',
+		'Name': () => 'Netscape Looping Application Extension',
+		'Extension Introducer': 'Extension Introducer', // 0x21
+		'Extension Label': ['FixedByte', 0xFF, 'Extension Label'], // 0xFF
+		'Block Size': ['FixedByte', 0x0B, 'Extension Label', 'number'], // 0x0B
+		'Application Identifier': ['FixedString', 'ANIMEXTS'], // different from Netscape
+		'Authentication Code': ['FixedString', '1.0'], // different from Netscape
+		// 'Application Data': 'Data Sub-block Array',
+		'Application Data': ['array', 'Netscape Looping Sub Block', 1], //same as Netscape
+		'Block Terminator': 'Block Terminator',
+	},
+	'Netscape Looping Sub Block': {
+		type: () => 'Data Sub-block',
+		size: ['FixedByte', 0x03, '', 'number'],
+		start: function () { return this.tell(); },
+		ID: ['FixedByte', 0x01],
+		'Loop Count': 'uint16', // unsigned 2-byte integer in little-endian byte order
+	},
+	'Netscape Buffering Sub Block': {
+		type: () => 'Data Sub-block',
+		size: ['FixedByte', 0x05, '', 'number'],
+		start: function () { return this.tell(); },
+		ID: ['FixedByte', 0x02],
+		'Buffer Size': 'uint32', // unsigned 4-byte integer in little-endian byte order
+	},
 
 	/**
 	 * <GIF Data Stream> ::=     Header <Logical Screen> <Data>* Trailer
@@ -240,12 +330,37 @@ const gifParserStructure = {
 			}
 			this.seek(before);
 			switch (ExtensionKey) {
-				case 'CommentExtension':
-				case 'ApplicationExtension': {
-					let ExtensionBlock = this.parse(ExtensionKey);
+				case 'CommentExtension': {
+					let CommentExtensionBlock = this.parse(ExtensionKey);
 					blocks.push({
 						blockType: ExtensionKey,
-						ExtensionBlock: ExtensionBlock,
+						ExtensionBlock: CommentExtensionBlock,
+					});
+					break;
+				}
+				case 'ApplicationExtension': {
+					let ApplicationExtensionBlock = this.parse(ExtensionKey);
+					if (ApplicationExtensionBlock['Application Identifier'] == 'NETSCAPE') {
+						this.seek(before);
+						let NetscapeLoopingExtension = this.parse('TRY', 'Netscape Looping Application Extension');
+						if (NetscapeLoopingExtension) {
+							ApplicationExtensionBlock = NetscapeLoopingExtension;
+						} else {
+							let NetscapeBufferingExtension = this.parse('TRY', 'Netscape Buffering Application Extension');
+							if (NetscapeBufferingExtension) {
+								ApplicationExtensionBlock = NetscapeBufferingExtension;
+							}
+						}
+					} else if (ApplicationExtensionBlock['Application Identifier'] == 'AnimExts') {
+						this.seek(before);
+						let AnimExtsLoopingExtension = this.parse('TRY', 'AnimExts Looping Application Extension');
+						if (AnimExtsLoopingExtension) {
+							ApplicationExtensionBlock = AnimExtsLoopingExtension;
+						}
+					}
+					blocks.push({
+						blockType: ExtensionKey,
+						ExtensionBlock: ApplicationExtensionBlock,
 					});
 					break;
 				}
@@ -340,8 +455,12 @@ const gifParserStructure = {
 	},
 };
 
-
+process.chdir(__dirname);
 fs.readFile('sokoban.gif', function (err, buffer) {
+	if (!buffer) {
+		console.log('no buffer');
+		return;
+	}
 	var parser = new jParser(buffer, gifParserStructure);
 	var gif = parser.parse('GIF Data Stream');
 	// console.log(require('util').inspect(gif, false, 10));
