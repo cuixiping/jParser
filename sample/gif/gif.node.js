@@ -1,5 +1,6 @@
 
 var fs = require('fs');
+var path = require('path');
 var jParser = require('../../src/jparser.js');
 
 /**
@@ -455,8 +456,13 @@ const gifParserStructure = {
 	},
 };
 
+const args = process.argv.slice(-1);
+console.log({args});
+let inputFile = args[0] && args[0].endsWith('.gif') && path.resolve(args[0]);
+
 process.chdir(__dirname);
-fs.readFile('sokoban.gif', function (err, buffer) {
+inputFile = inputFile || 'sokoban.gif';
+fs.readFile(inputFile, function (err, buffer) {
 	if (!buffer) {
 		console.log('no buffer');
 		return;
@@ -464,6 +470,6 @@ fs.readFile('sokoban.gif', function (err, buffer) {
 	var parser = new jParser(buffer, gifParserStructure);
 	var gif = parser.parse('GIF Data Stream');
 	// console.log(require('util').inspect(gif, false, 10));
-	fs.writeFileSync('sokoban.gif.json', JSON.stringify(gif, null, 2), { encoding: 'utf8' });
-	console.log('output file ' + 'sokoban.gif.json');
+	fs.writeFileSync(inputFile + '.json', JSON.stringify(gif, null, 2), { encoding: 'utf8' });
+	console.log('output file ' + inputFile + '.json');
 });
