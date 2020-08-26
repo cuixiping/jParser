@@ -93,7 +93,7 @@ const gifParserStructure = {
 
 	ColorTable: function (ColorTableFlag, SizeOfColorTable) {
 		// console.log('[function] ColorTable ', ColorTableFlag, SizeOfColorTable);
-		if (ColorTableFlag && SizeOfColorTable > 0) {
+		if (ColorTableFlag) {
 			let unitBitCount = SizeOfColorTable + 1;
 			let colorsCount = 1 << unitBitCount;
 			// console.log('[function] ColorTable colorsCount: ', colorsCount);
